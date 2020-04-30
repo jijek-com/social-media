@@ -1,87 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Frontend Mentor | MasEug</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<div class="wrapper theme-dark">
+    <div class="wrapper__box">
+        <div class="wrapper__head">
+            <div class="">
+                <div class="wrapper__head__title">Social Media Dashboard</div>
+                <div class="wrapper__head__total">Total Followers: 23,004</div>
+            </div>
 
-  Dark Mode
+            <div class="wrapper__head__style">
+                <span class="name">Dark Mode</span>
 
-  
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="switch-slider round"></span>
+                </label>
+            </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="wrapper__cont social">
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+            <div class="social__box border-top-fb">
+                <div class="social__head">
+                    <div class="social__head__icon fb"></div>
+                    <div class="social__head__group">@nathanf</div>
+                </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+                <div class="social__cont">
+                    <div class="count">
+                        1987
+                    </div>
+
+                    <div class="desc">
+                        Followers
+                    </div>
+
+                    <div class="date">
+                        <div class="icon-stat up"></div>
+                        <span>12 Today</span>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="social__box border-top-tw">
+                <div class="social__head">
+                    <div class="social__head__icon tw"></div>
+                    <div class="social__head__group">@nathanf</div>
+                </div>
 
-  Overview - Today
+                <div class="social__cont">
+                    <div class="count">
+                        1044
+                    </div>
 
-  Page Views
-  87
-  3%
+                    <div class="desc">
+                        Followers
+                    </div>
 
-  Likes
-  52
-  2%
+                    <div class="date">
+                        <span class="icon-stat up"></span>
+                        <span>99 Today</span>
+                    </div>
+                </div>
+            </div>
 
-  Likes
-  5462
-  2257%
+            <div class="social__box border-top-im">
+                <div class="social__head">
+                    <div class="social__head__icon im"></div>
+                    <div class="social__head__group">@realnathanf</div>
+                </div>
 
-  Profile Views
-  52k
-  1375%
+                <div class="social__cont">
+                    <div class="count">
+                        11k
+                    </div>
 
-  Retweets
-  117
-  303%
+                    <div class="desc">
+                        Followers
+                    </div>
 
-  Likes
-  507
-  553%
+                    <div class="date">
+                        <span class="icon-stat up"></span>
+                        <span>1099 Today</span>
+                    </div>
+                </div>
+            </div>
 
-  Likes
-  107
-  19%
+            <div class="social__box border-top-utube">
+                <div class="social__head">
+                    <div class="social__head__icon utube"></div>
+                    <div class="social__head__group">Nathan F.</div>
+                </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+                <div class="social__cont">
+                    <div class="count">
+                        8239
+                    </div>
+
+                    <div class="desc">
+                        Subscribers
+                    </div>
+
+                    <div class="date">
+                        <span class="icon-stat down"></span>
+                        <span class="red">144 Today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper__info">
+
+            <div class="wrapper__info__title">
+                Overview - Today
+            </div>
+
+            <div class="wrapper__info__cont info">
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Page Views</div>
+                        <div class="icon fb"></div>
+                    </div>
+                    <div class="info__cont">
+                        <div class="count">87</div>
+                        <div class="percent green">
+                            <span class="icon-stat up"></span>
+                            <span class="green">3%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Likes</div>
+                        <div class="icon fb"></div>
+                    </div>
+
+                    <div class="info__cont">
+                        <div class="count">52</div>
+                        <div class="percent ">
+                            <span class="icon-stat down"></span>
+                            <span class="red">2% </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Likes</div>
+                        <div class="icon im"></div>
+                    </div>
+
+                    <div class="info__cont">
+                        <div class="count">5462</div>
+                        <div class="percent green">
+                            <span class="icon-stat up"></span>
+                            <span class="green">2257%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Profile Views</div>
+                        <div class="icon im"></div>
+                    </div>
+                    <div class="info__cont">
+                        <div class="count">52k</div>
+                        <div class="percent green">
+                            <span class="icon-stat up"></span>
+                            <span class="green">1375%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Retweets</div>
+                        <div class="icon tw"></div>
+                    </div>
+                    <div class="info__cont">
+                        <div class="count">117</div>
+                        <div class="percent green">
+                            <span class="icon-stat up"></span>
+                            <span class="green">303%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Likes</div>
+                        <div class="icon tw"></div>
+                    </div>
+                    <div class="info__cont">
+                        <div class="count">507</div>
+                        <div class="percent green">
+                            <span class="icon-stat up"></span>
+                            <span class="green">553%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Likes</div>
+                        <div class="icon utube"></div>
+                    </div>
+
+                    <div class="info__cont">
+                        <div class="count">107</div>
+                        <div class="percent green">
+                            <span class="icon-stat down"></span>
+                            <span class="red">19%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__box">
+                    <div class="info__head">
+                        <div class="title">Total Views</div>
+                        <div class="icon utube"></div>
+                    </div>
+
+                    <div class="info__cont">
+                        <div class="count">1407</div>
+                        <div class="percent green">
+                            <span class="icon-stat down"></span>
+                            <span class="red">12%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/MasEug">MasEug</a>.
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
