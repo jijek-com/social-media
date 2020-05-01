@@ -11,6 +11,26 @@ $col-bg-dark-blue-2: hsl(232, 19%, 15%);
 $col-desaturated-dark: hsl(228, 28%, 20%);
 $col-desaturated: hsl(228, 34%, 66%);
 
+.theme-dark {
+  --color-bg: hsl(232, 19%, 15%);
+  --color-txt: hsl(0, 0%, 100%);
+  --color-txt-sub: hsl(228, 34%, 66%);
+  --color-green: hsl(146, 68%, 55%);
+  --color-blue: hsl(210, 78%, 56%);
+
+  --color-card: hsl(228, 28%, 20%);
+}
+
+.theme-light {
+  --color-bg: hsl(225, 100%, 98%);
+  --color-txt: hsl(230, 17%, 14%);
+  --color-txt-sub: hsl(228, 12%, 44%);
+  --color-green: hsl(146, 68%, 55%);
+  --color-blue: hsl(210, 78%, 56%);
+
+  --color-card: hsl(227, 47%, 96%);
+}
+
 html {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -23,8 +43,8 @@ html, body {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $col-bg-dark-blue;
-  color: $col-white;
+  background-color: var(--color-bg);
+  color: var(--color-txt);
 }
 
 *, *::before, *::after {
@@ -50,7 +70,8 @@ body {
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      color: var(--color-txt);
     }
   }
 
@@ -58,21 +79,23 @@ body {
     padding: 18px 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 
-    &__title {
+
+    .title {
       font-size: 36px;
       font-weight: 700;
     }
 
-    &__total {
+    .total {
       padding-top: 11px;
       letter-spacing: 0.2px;
       font-size: 18px;
       font-weight: 700;
-      color: $col-desaturated;
+      color: var(--color-txt-sub);
     }
 
-    &__style {
+    .style {
       margin-top: -7px;
       margin-right: 6px;
       display: flex;
@@ -99,11 +122,11 @@ body {
           height: 0;
 
           &:checked + .switch-slider {
-            background: linear-gradient(to right, $col-blue, $col-green);
+            background: linear-gradient(to right, var(--color-green), var(--color-blue));
           }
 
           &:focus + .switch-slider {
-            box-shadow: 0 0 1px $col-blue;
+            box-shadow: 0 0 1px var(--color-blue);
           }
 
           &:checked + .switch-slider:before {
@@ -120,7 +143,7 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: $col-desaturated;
+          background: linear-gradient(to right, var(--color-green), var(--color-blue));
           -webkit-transition: .4s;
           transition: .4s;
 
@@ -132,7 +155,7 @@ body {
             top: 4px;
             left: 4px;
             bottom: 4px;
-            background-color: $col-bg-dark-blue;
+            background-color: var(--color-bg);
             -webkit-transition: .4s;
             transition: .4s;
             border-radius: 50%;
@@ -157,7 +180,7 @@ body {
     .social {
 
       &__box {
-        background-color: $col-desaturated-dark;
+        background-color: var(--color-card);
         width: 100%;
         border-radius: 6px;
         -moz-border-radius: 6px;
@@ -298,7 +321,7 @@ body {
       .info {
 
         &__box {
-          background-color: $col-desaturated-dark;
+          background-color: var(--color-card);
           width: 100%;
           border-radius: 6px;
           -moz-border-radius: 6px;
@@ -389,4 +412,61 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
 
+    &__head {
+
+
+      &__name {
+        padding-bottom: 20px;
+      }
+
+      &__style {
+        padding-top: 12px;
+        width: 100%;
+        justify-content: space-between;
+        border-top: 1px solid $col-desaturated;
+      }
+    }
+    &__cont {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 35px;
+    }
+
+    &__info {
+      &__cont {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+
+    &__box {
+      padding: 30px 25px;
+    }
+
+    &__head {
+      flex-direction: column;
+      padding: 10px 0;
+
+      &__name {
+        padding-bottom: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+
+      .total {
+        padding-top: 7px;
+        font-size: 14px;
+      }
+
+    }
+
+  }
+}
