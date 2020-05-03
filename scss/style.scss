@@ -195,6 +195,7 @@ body {
         border-radius: 6px;
         -moz-border-radius: 6px;
         -webkit-border-radius: 6px;
+        cursor: pointer;
 
         &.border-top-fb {
           border-top: 5px solid var(--color-fb);
@@ -330,6 +331,7 @@ body {
       .info {
 
         &__box {
+          cursor: pointer;
           background-color: var(--color-card);
           width: 100%;
           border-radius: 6px;

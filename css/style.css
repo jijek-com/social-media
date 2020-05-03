@@ -312,6 +312,7 @@ body {
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  cursor: pointer;
 }
 
 .wrapper__cont .social__box.border-top-fb {
@@ -444,6 +445,7 @@ body {
 }
 
 .wrapper__info__cont .info__box {
+  cursor: pointer;
   background-color: var(--color-card);
   width: 100%;
   border-radius: 6px;
